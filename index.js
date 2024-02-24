@@ -11,6 +11,17 @@ var messageEl = document.getElementById("message-el")
 // need to use # to select id in querySelector and . to select class in querySelector
 var sumEl = document.querySelector("#sum-el")
 var cardsEl = document.querySelector("#cards-el")
+var chipsEL = document.querySelector("#chips-el")
+var playerEl = document.querySelector("#player-el")
+
+//object store data in-depth
+//key-value pairs
+var player = {
+//  Key     value 
+    name: "Brayan",
+    chips: "145"
+}
+
 
 //Function that generates a random card
 function getRandomCard() {
@@ -60,10 +71,12 @@ function renderGame() {
         isAlive = false
     }
     messageEl.textContent = message
+    playerEl.textContent = player.name + ": $" + player.chips
 }
 
 //Function that draws a new card
 function newCard() {
+    //Edge cases
     if (arrCards.length < 2){
         return 0
     }
