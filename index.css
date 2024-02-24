@@ -1,0 +1,47 @@
+body {
+    font-family: 'DM Serif Display', serif;
+    font: bold;
+    background-image: url(images/bg-bjboard.jpeg);
+    background-size: cover;
+    color: white;
+
+}
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#title {
+    color: goldenrod;
+}
+#start-btn {
+    background-color: goldenrod;
+    color: green;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    
+}
+
+#new-card-btn {
+    background-color: goldenrod;
+    color: green;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    
+}
+
+
+
